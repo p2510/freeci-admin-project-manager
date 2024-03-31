@@ -68,7 +68,6 @@ const signIn = async () => {
     try {
       const docSnap = await getDoc(docRef)
       if (docSnap.exists()) {
-        console.log(docSnap.data())
         localStorage.setItem('user', JSON.stringify(docSnap.data()))
         router.push('/apercu')
       } else {
