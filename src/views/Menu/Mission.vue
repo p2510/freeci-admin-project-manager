@@ -225,7 +225,7 @@ let changeStatut = (id) => {
                 {{ mission.created_at }}
               </td>
               <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">
-                <span v-if="mission.statut"> Ouvert</span>
+                <span v-if="mission.statut == 1"> Ouvert</span>
                 <span v-else> Fermé </span>
               </td>
 
@@ -309,7 +309,7 @@ let changeStatut = (id) => {
                   <p class="font-semibold text-lg">{{ item.title }}</p>
                   <p class="text-md">{{ item.email }}</p>
                   <p class="text-md">
-                    Type de mission : <span v-if="item.type_mission">En ligne</span>
+                    Type de mission : <span v-if="item.type_mission == 1">En ligne</span>
                     <span v-else>Sur place</span>
                   </p>
                   <p class="text-md">
