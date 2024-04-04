@@ -197,6 +197,7 @@ const printPage = () => {
                   >
                     <option value="Monnaie électronique" selected>Monnaie électronique</option>
                     <option value="En espèce">En espèce</option>
+                    <option value="En espèce">Par chèque</option>
                   </select>
                 </div>
               </div>
