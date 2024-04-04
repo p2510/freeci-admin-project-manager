@@ -14,7 +14,7 @@ let form = ref({
   recurrence: 'unique',
   paymentMode: 'Monnaie électronique',
   deadline: 'Maximum 3 Jours',
-  commission: 7,
+  commission: 10,
   deposit: 25
 })
 const showModal = ref(false)
@@ -224,14 +224,27 @@ const printPage = () => {
                   <div class="flex items-center gap-x-3">
                     <input
                       v-model="form.commission"
-                      value="7"
+                      value="20"
                       type="radio"
                       class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
                     />
                     <label
                       for="push-everything"
                       class="block text-sm font-medium leading-6 text-gray-900"
-                      >7%</label
+                      >20%</label
+                    >
+                  </div>
+                  <div class="flex items-center gap-x-3">
+                    <input
+                      v-model="form.commission"
+                      value="10"
+                      type="radio"
+                      class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                    />
+                    <label
+                      for="push-everything"
+                      class="block text-sm font-medium leading-6 text-gray-900"
+                      >10%</label
                     >
                   </div>
                   <div class="flex items-center gap-x-3">
